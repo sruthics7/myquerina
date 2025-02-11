@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myquerina</title>
+    <title>Food Showcase</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
@@ -14,23 +14,35 @@
 </head>
 
 <body>
+    <!-- Navigation -->
     <nav class="nav">
         <div class="nav-container">
-            <div class="logo"><img src="images/Group 7.png" alt=""></div>
+            <div class="logo">
+                <img src="images/Group 7.png" alt="Logo">
+            </div>
             <div class="nav-links">
-                <a href="#fungi">Fungi</a>
-                <a href="#promyc">Promyc®</a>
-                <a href="#techmyc">TechMyc</a>
-                <a href="#mycotalks">MycoTalks</a>
-                <a href="#about">About Us</a>
-                <a href="#contact">Contact</a>
-                <div class="search-icon"></div>
-
-
+                <ul>
+                    <li><a href="#fungi">Fungi</a></li>
+                    <li><a href="#promyc">Promyc®</a></li>
+                    <li><a href="#techmyc">TechMyc</a></li>
+                    <li><a href="#mycotalks">MycoTalks</a></li>
+                    <li class="dropdown">
+                        <a href="#about">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Mission</a></li>
+                            <li><a href="#">Vision</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="search-icon"></a></li> <!-- Search icon as a link -->
+                </ul>
             </div>
         </div>
     </nav>
+    
+    
 
+    <!-- Hero Section -->
     <section class="hero">
         <img src="images/banner.jpg" alt="Delicious food bowl" class="hero-image">
         <div class="hero-content">
@@ -231,10 +243,70 @@
             </div>
         </div>
     </section>
-    <section class="footer">
-     <img src="images/image 22.png" alt="">
-    </section>
     
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="images/image 22.png" alt="Mycorena" style="max-width: 150px; margin-bottom: 20px;">
+                <p>Gamlestadsvägen 2 B27, 415 02<br>
+                Gothenburg, Sweden</p>
+                <p>+46 761 71 81 23<br>
+                info@mycorena.com</p>
+            </div>
+    
+            <div class="footer-section">
+                <h3>MYCORENA</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Press</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Shortcuts</h3>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Promyc</a></li>
+                    <li><a href="#">Technology</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>connect</h3>
+                <ul>
+                    <ul class="footer-links">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>Subscribe for our latest news!</h3>
+                <div class="subscribe">
+                    <input type="email" placeholder="">
+                    <button type="submit">Subscribe</button>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><img src="linkedin.png" alt=""></a>
+                    <a href="#"><img src="instagram.png" alt=""></a>
+                    <a href="#"><img src="twitter.png" alt=""></a>
+                    <a href="#"><img src="youtube.png" alt=""></a>
+                    <a href="#"><img src="facebook.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>Copyright © 2022 Mycorena</p>
+        </div>
+    </footer>
 </body>
 
 </html>
